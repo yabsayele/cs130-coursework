@@ -46,7 +46,7 @@ article {  background: #00a4cf; }
 
 main {
    grid-area: g;
-   /*background: #00a4cf;*/
+   background: #00a4cf;
 }
 aside {
    grid-area: f;

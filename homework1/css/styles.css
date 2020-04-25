@@ -1,0 +1,108 @@
+/* Global styles
+https://coolors.co/3a4660-ed8a63-845007-c9af98
+#3A4660: dark blue
+#BD8C7D: middle red
+#f7fff7: mint white
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+  color: #3A4660;
+  margin: 10;
+  padding: 10;
+  font-family: 'Raleway',sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}
+
+a {
+  color: #3A4660;
+}
+
+h1{
+  font-size: 100px;
+  line-height: 1;
+  color: #f7fff7;
+}
+
+h2 {
+  font-size: 50px;
+  color: #3A4660;
+}
+
+p1 {
+  color: #3A4660;
+}
+
+h1, h2 {
+  font-family: 'Raleway', cursive;
+  font-weight: 400;
+  margin: 10px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+h5 {
+  font-family: 'Raleway', cursive;
+  font-weight: 500;
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+  color: #f7fff7;
+}
+
+ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.links{
+  text-align:center;
+}
+
+main {
+  background: #f7fff7;
+}
+header {
+  background: #BD8C7D;
+}
+
+.featured-projects {
+  background: #F7FFF7;
+  max-width: 800px;
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0;
+
+}
+
+.work-experience {
+  background: #F7FFF7;
+  max-width: 800px;
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0;
+
+}
+
+.education {
+  background: #F7FFF7;
+  max-width: 800px;
+  width: 65%;
+  margin: 0 auto;
+  padding: 10px 0;
+
+}
+
+footer {
+  background:#BD8C7D;
+}

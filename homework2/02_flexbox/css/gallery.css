@@ -50,7 +50,7 @@ nav h1 {
 }
 
 .card {
-  width: 25%;
+  width: 20%;
   padding: 10px;
 
 }
@@ -93,9 +93,9 @@ nav h1 {
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1200px) {
   .card{
-    width: 50%;
+    width: 33.33%;
     padding: 10px;
   }
   .image-div {
@@ -104,7 +104,7 @@ nav h1 {
 
   @media screen and (max-width:700px) {
     .card{
-      width: 100%;
+      width: 50%;
     }
     .image-div {
       height: 450px;

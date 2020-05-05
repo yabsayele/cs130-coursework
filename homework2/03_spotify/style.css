@@ -43,6 +43,10 @@ aside a.selected {
   border-left: solid 2px green;
 }
 
+nav a.selected {
+  border-bottom: solid 2px green;
+}
+
 a {
   line-height: normal;
   padding: 5;
@@ -140,8 +144,22 @@ aside a:hover {
   font-weight: 700;
 }
 
+aside i:hover {
+  font-weight: 700;
+}
+
 nav a:hover {
   border-bottom: solid 2px green;
+  color: white;
+}
+
+
+#upgrade:hover {
+  background-color: grey;
+}
+
+#profile:hover {
+  background-color: grey;
 }
 
 .play-button {

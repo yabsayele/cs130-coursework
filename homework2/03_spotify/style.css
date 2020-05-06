@@ -41,10 +41,12 @@ aside {
 
 aside a.selected {
   border-left: solid 2px green;
+  filter: brightness(100%);
 }
 
 nav a.selected {
   border-bottom: solid 2px green;
+  filter: brightness(100%);
 }
 
 a {
@@ -52,6 +54,8 @@ a {
   padding: 5;
   margin: 5;
 }
+
+
 
 header {
     background: #111;
@@ -72,6 +76,8 @@ header #upgrade {
 }
 
 header #profile {
+  display: flex;
+  flex-direction: row;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 30px;
@@ -107,6 +113,7 @@ header {
   margin: auto;
   padding: 10px;
   line-height: normal;
+  position: fixed;
 }
 
 #featured-content {
@@ -128,7 +135,7 @@ card > div {}
 .artist-card > div{
   border: solid 1px black;
   background-color: #333;
-  padding: 10px;
+  padding: 25px;
   border-radius: 20px;
 }
 
@@ -139,18 +146,21 @@ card > div {}
   border-radius: 50%;
 
 }
-
-aside a:hover {
-  font-weight: 700;
+aside a{
+  filter: brightness(90%);
 }
 
-aside i:hover {
-  font-weight: 700;
+aside a:hover {
+  filter: brightness(100%)
+}
+
+nav a{
+  filter: brightness(90%)
 }
 
 nav a:hover {
   border-bottom: solid 2px green;
-  color: white;
+  filter: brightness(100%);
 }
 
 
@@ -206,8 +216,19 @@ nav a:hover {
   }
 }
 @media screen and (max-width: 700px) {
+  body {
+      grid-template-columns:auto;
+      grid-template-areas:
+        "main"
+        "bottom";
+  }
+
   .artist-card{
     width: 50%;
     padding: 10px;
   }
+  aside {
+    display: none;
+  }
+
 }

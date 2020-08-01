@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+      <title>Sargent Dining Hall</title>
+      <link rel="stylesheet" href="css/sargentstyle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <!-- pretty sure this is not how you should do it
+    <div class="parent">
+      <a href="index.html">
+        <img class = "button" src="backbutton.png" />
+      </a>
+      <img class= "dininghall" src='133.jpg'/>
+    </div> -->
+
+
+    <header>
+      <section class="homebutton">
+        <a href="index.html"><button>Northwestern</button></a>
+      </section>
+
+      <section class="header1">
+        <h1>Sargent Dining Hall</h1>
+      </section>
+
+      <img class= "dininghall" src='images/133.jpg'/>
+
+      <nav>
+        <form>
+          <p>Hours: 8AM-8PM</p>
+            <!-- Dietary -->
+          <label for = "selectlist"> Dietary </label>
+          <select id="selectlist" name="selectlist" >
+            <span onclick="document.getElementById('selectlist').style.display='block'">
+
+              <input id="vegetarian" name="vegetarian"
+                type="checkbox" value="vegetarian">
+              <label for="vegetarian"> Vegetarian</label><br>
+
+              <input id="vegan" name="vegan"
+              type="checkbox" value="vegan">
+              <label for="vegan"> Vegan</label><br>
+
+              <input id="gluten-free" name="gluten-free"
+              type="checkbox" value="gluten-free">
+              <label for="gluten-free"> Gluten-Free</label><br>
+
+              <input id="halal" name="halal"
+              type="checkbox" value="halal">
+              <label for="halal"> Halal</label><br>
+
+              <input id="allergy friendly" name="allergy friendly"
+              type="checkbox" value="allergy friendly">
+              <label for="Allergy Friendly"> Allergy Friendly</label><br>
+          </select>
+        </form>
+         <a href="pickuporder.html"><button> View Pickup Order </button></a>
+      </nav>
+    </header>
+
+      <div class="sargentstations">
+          <!-- card 1 -->
+          <a href="comfortstation.html">
+            <article class="stations">
+               <p>Comfort</p>
+            </article>
+          </a>
+
+          <!-- card 2 -->
+          <article class="stations">
+             <p>Rooted</p>
+          </article>
+
+          <!-- card 3 -->
+          <article class="stations">
+             <p>Kosher</p>
+          </article>
+
+          <!-- card 4 -->
+          <article class="stations">
+             <p>Drinks</p>
+          </article>
+
+          <!-- card 5 -->
+          <article class="stations">
+             <p>Sides</p>
+          </article>
+      </div>
+
+
+  </body>
+</html>

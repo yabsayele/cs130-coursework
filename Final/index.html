@@ -2,93 +2,355 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Tutorial 03</title>
-  <link rel="stylesheet" href="./indexstyle.css">
+  <title>Northwestern Online Ordering Application</title>
+  <link rel="stylesheet" href="css/indexstyle.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="An online ordering application
+  for Northwestern Dining halls.">
+  <!--you can use meta to create an homescreen phone icon -->
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+  <!-- partial:index.partial.html -->
+  <!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+  <header>
+       <!-- University Header -->
+       <section class="header1">
+        <h1>Northwestern</h1>
+       </section>
 
-   <!-- left menu -->
-   <section class="menu1">
-      <div>Northwestern University</div>
-   </section>
+    <div class="userinformation">
+        <!--Button to open the modal-->
+        <button onclick="document.getElementById('id01').style.display='block'">
+           Sign Up</button>
 
-   <!-- right menu -->
-   <section class="menu2">
-      <div>Near You</div>
-   </section>
+        <div id="id01" class = "modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class = "close" title= "Close Modal"> times;</span>
+          <form class="modal-content" action="/action_page.php"> <!--create this page?-->
+            <div class = "modal-container">
+              <h1> Sign Up</h1>
+              <hr>
+              <label for = "email"> <b> Email</b></label>
+              <input name= "email" type="text"
+              placeholder="me@u.northwestern.edu" required>
 
+              <label for= "password"<b>Password</b></label>
+              <input name="password" type= "password"
+              placeholder="Enter Password" required>
 
-   <div class="scrollmenu">
-     <article class="card">
-       <p> Sargent Dining Hall</p>
-       <img src='133.jpg'/>
-     </article>
+              <div class ="clearfix">
+                <button type = "button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbutton">Cancel</button>
+                <button type ="submit" class="signup"> Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
 
-     <article class="card">
-       <p> Plex Dining Hall</p>
-       <img src='foster-walker.jpg'/>
-     </article>
+        <button> Login </button>
+    </div>
 
-     <article class="card">
-       <p> Allison Dining Hall</p>
-       <img src='allisonhall0209.jpg'/>
-     </article>
-   </div>
+     <!-- Navigation -->
+       <nav>
+         <form>
+           <!-- Search -->
+         <label for="search"> Search </label>
+         <input id = "search" name = "search"
+                type="search" placeholder="Enter A Dining Hall">
 
-   <section class="menu3">
-      <div>All Options</div>
-   </section>
+        </form>
+    <!-- Linking Pickup Order page -->
+        <a href="pickuporder.html"><button> View Pickup Order </button></a>
+       </nav>
+   </header>
 
-<div class="container">
-   <!-- card 1 -->
-   <article class="card">
-      <p>Allison Dining Commons</p>
-      <div class='cardinfo'>
-        <img src='allisonhall0209.jpg'/>
-        <p>8AM-8PM</p>
+  <main>
+      <section class="section1">
+         <!-- Near you menu -->
+         <header class="header2">
+            <h2>Near You</h2>
+         </header>
+
+         <div class="scrollmenu">
+
+           <a href="indexsargent.html"
+             <article class="card">
+               <p> Sargent Dining Hall</p>
+               <img src='images/133.jpg'/>
+             </article>
+            </a>
+
+           <article class="card">
+             <p>Foster Walker Plex East</p>
+             <img src='images/foster-walker.jpg'/>
+           </article>
+
+           <article class="card">
+             <p>Foster Walker Plex West</p>
+             <img src='images/foster-walker.jpg'/>
+           </article>
+
+           <article class="card">
+             <p> Elder Dining Commons</p>
+             <img src='images/allisonhall0209.jpg'/>
+           </article>
+
+           <article class="card">
+             <p> Lisa's Cafe Featuring Plum Market</p>
+             <img src='images/133.jpg'/>
+           </article>
+
+           <article class="card">
+             <p>Tech Express</p>
+             <img src='images/133.jpg'/>
+           </article>
+
+         </div>
+     </section>
+
+    <section class="section2">
+       <!-- All Options Header -->
+       <header class="header3">
+          <h2>All Options</h2>
+       </header>
+
+      <div class="container">
+
+        <!-- card 1 -->
+        <article class="card">
+           <div class="cardinfo">
+             <p>BUILD pizza by design</p>
+             <p>8AM-8PM</p>
+           </div>
+           <div class='cardimage'>
+             <img src='images/allisonhall0209.jpg'/>
+           </div>
+        </article>
+
+         <!-- card 2 -->
+         <article class="card">
+            <div class="cardinfo">
+              <p>Allison Dining Commons</p>
+              <p>8AM-8PM</p>
+            </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 3 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Elder Dining Commons</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/ELDER_JeffreyWang_WEB-900x600.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 4 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Asiana Foodville</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 5 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Cafe Coralie</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 6 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Cohen Commons- Faculty and Staff Dining Lounge</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 7 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Dunkin Donuts</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 8 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Foster Walker Plex East</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/foster-walker.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 9 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Foster Walker Plex West</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/foster-walker.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 10 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Fran's Cafe</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 11 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Harry's Cafe</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 12 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Kresge Cafe</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 13 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Lisa's Cafe Featuring Plum Market</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 14 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>MOD Pizza</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 15 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Market at Norris</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 16 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Patty Squared</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 17 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Sargent Dining Commons</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/133.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 18 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>The Best of Local</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 19 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Starbucks</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 20 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Tech Express</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
+
+         <!-- card 21 -->
+         <article class="card">
+           <div class="cardinfo">
+             <p>Wildcat Deli</p>
+             <p>8AM-8PM</p>
+           </div>
+            <div class='cardimage'>
+              <img src='images/allisonhall0209.jpg'/>
+            </div>
+         </article>
       </div>
-   </article>
-
-   <!-- card 2 -->
-   <article class="card">
-      <p>Elder Dining Commons</p>
-      <div class='cardinfo'>
-        <img src='ELDER_JeffreyWang_WEB-900x600.jpg'/>
-        <p>8AM-8PM</p>
-      </div>
-   </article>
-
-   <!-- card 3 -->
-   <article class="card">
-      <p>Foster Walker Plex East</p>
-      <div class='cardinfo'>
-        <img src='foster-walker.jpg'/>
-        <p>8AM-8PM</p>
-      </div>
-   </article>
-
-   <!-- card 4 -->
-   <article class="card">
-      <p>Foster Walker Plex West</p>
-      <div class='cardinfo'>
-        <img src='foster-walker.jpg'/>
-        <p>8AM-8PM</p>
-      </div>
-   </article>
-
-   <!-- card 5 -->
-   <article class="card">
-      <p>Sargent Dining Commons</p>
-      <div class='cardinfo'>
-        <img src='133.jpg'/>
-        <p>8AM-8PM</p>
-      </div>
-   </article>
-</div>
+    </section>
+  </main>
 
 </body>
+
 </html>

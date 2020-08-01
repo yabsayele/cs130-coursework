@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Northwestern Online Ordering Application</title>
+    <link rel="stylesheet" href="./indexstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An online ordering application
+    for Northwestern Dining halls.">
+    <!--you can use meta to create an homescreen phone icon -->
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <!-- https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+    <header>
+      <section class="homebutton">
+        <form>
+            <input id ="button" type="button" value="Go back!" onclick="history.back()">
+        </form>
+      </section>
+       <!-- University Header -->
+       <section class="header1">
+          <h1>Pickup Order</h1>
+          <p>Pickup Time: 5:00 PM </p>
+          <p>Pickup Location: Sargent Dining Commons</p>
+          <p>Pickup Number: 15</p>
+       </section>
+     </header>
+
+    <main>
+      <section class="section1">
+         <!-- Near you menu -->
+         <header class="header2">
+            <h2>Items</h2>
+         </header>
+
+         <div class="items">
+
+           <article class="item">
+             <p> 1 Box(Comfort and Rooted)</p>
+           </article>
+
+           <article class="item">
+             <p>1 Container</p>
+           </article>
+
+           <article class="item">
+             <p>Water</p>
+           </article>
+
+           <article class="item">
+             <p> Sprite</p>
+           </article>
+
+           <article class="item">
+             <p> Orange</p>
+           </article>
+
+           <article class="item">
+             <p>Apple</p>
+           </article>
+
+         </div>
+        </section>
+
+      <section class="section2">
+       <!-- All Options Header -->
+         <header class="header3">
+            <h2>Notes:</h2>
+         </header>
+
+         <div class="container">
+            <!-- card 1 -->
+            <article class="note">
+               <p>Allergic to Peanuts</p>
+            </article>
+        </div>
+      </section>
+
+      <button> Place Order</button>
+
+    </main>
+  </body>
+</html>

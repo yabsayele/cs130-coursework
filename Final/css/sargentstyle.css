@@ -1,0 +1,110 @@
+/*Global Styles
+------------------------------*/
+
+/*Header Styles
+------------------------------*/
+
+/*Stations Styles
+------------------------------*/
+html {
+   background-color: #F5F4FA;
+}
+body * {
+   width: 100%;
+   box-sizing: border-box;
+   font-family: 'Arial';
+}
+body {
+   margin: 0;
+   padding: 20px;
+}
+
+header img {
+  max-width: 400px;
+  padding: 10px;
+  background-color: purple;
+}
+
+.parent{
+  position: relative;
+  top:0;
+  left:0;
+}
+
+img .dininghall{
+  position: relative;
+  top:0;
+  left:0;
+}
+
+img .button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card:hover {
+  background-color: pink;
+}
+
+
+ /* .menu1 {
+  color: #4E2A84;
+  margin:10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+} */
+
+ .menu2 {
+  margin:10px;
+  color: #716C6B;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.stations {
+  width: 20%;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: #B6ACD1;
+  margin: 20px;
+  text-align:center;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  width: 100%
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .card{
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .card{
+      width: 50%;
+      padding: 10px;
+    }

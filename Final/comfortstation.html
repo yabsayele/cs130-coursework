@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Comfort Station</title>
+      <link rel="stylesheet" href="css/comfortstyle.css">
+  </head>
+
+  <body>
+    <header>
+      <h1> Comfort Station</h1>
+      <section class="homebutton">
+        <a href="indexsargent.html"><button>Sargent</button></a>
+      </section>
+      <p> Please Select your packaged item</p>
+    </header>
+
+    <tr>
+      <td style="width: 120px;">${item}</td>
+      <td style="width: 100px;">
+          <select>
+              <option value="sm">Small</option>
+              <option value="md">Medium</option>
+              <option value="lg">Large</option>
+          </select>
+      <td>
+          <button data-item="${item}">Add to Cart</button>
+      </td>
+    </tr>
+
+    <form action="?????????????????">
+      <input type="checkbox" id="ComfortOption1" name="ComfortOption1" value="Chicken Makhni">
+      <label for="vehicle1"> Chicken Makhni</label><br>
+      <input type="checkbox" id="ComfortOption2" name="ComfortOption2" value="Jasmine Rice">
+      <label for="vehicle2"> Jasmine Rice</label><br>
+      <input type="checkbox" id="ComfortOption3" name="ComfortOption3" value="Sweet Potatoes">
+      <label for="vehicle3"> Sweet Potatoes</label><br>
+      <input type="checkbox" id="ComfortOption4" name="ComfortOption4" value="Mac 'n Cheese">
+      <label for="vehicle3"> Mac 'n Cheese</label><br><br>
+      <input type="submit" value="Add to my Order">
+    </form>
+
+    <script type= "text/javascript" src="comfortstation.js"></script>
+  </body>
+</html>
